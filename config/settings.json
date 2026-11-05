@@ -1,0 +1,32 @@
+{
+  "script_directories": [
+    "./scripts",
+    "./DevTools/scripts"
+  ],
+  "default_interpreters": {
+    ".ps1": "pwsh",
+    ".sh": "bash",
+    ".bat": "cmd.exe",
+    ".cmd": "cmd.exe",
+    ".py": "python"
+  },
+  "approved_public_ips": [
+    "103.142.31.212",
+    "103.181.238.50"
+  ],
+  "execution_timeout_seconds": 120,
+  "require_confirmation_for_new_scripts": true,
+  "log_directory": "./logs",
+  "history_file": "./logs/executions/history.jsonl",
+  "aliases": {
+    "net": "network-check",
+    "aws": "aws-check",
+    "gitc": "git-check",
+    "health": "app-health"
+  },
+  "logging": {
+    "level": "INFO",
+    "console": true,
+    "file": true
+  }
+}
